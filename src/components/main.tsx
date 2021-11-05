@@ -28,7 +28,7 @@ import { MapProps } from "./types/userProps";
 
 
 const Main = () => {
-    const { users, userData } = useAppSelector(state => state);
+    const { users, userData } = useAppSelector((state: any) => state);
     const dispatch = useAppDispatch();
     const [isOpen, setIsOpen] = useState(false);
     const [form] = Form.useForm();
